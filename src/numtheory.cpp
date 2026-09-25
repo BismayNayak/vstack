@@ -78,7 +78,7 @@ void test_flt(){
     int64_t x,y;
     ext_gcd(a,p,x,y);
     int64_t inv_gcd=((x%p)+p)%p;
-    std::cout<<"Modular Inverse of "<<a<<" mod "<<p<<" is (using Ext_GCD)"<<inv_flt<<std::endl;
+    std::cout<<"Modular Inverse of "<<a<<" mod "<<p<<" is (using Ext_GCD)"<<inv_gcd<<std::endl;
     std::cout<<(inv_flt==inv_gcd ? "Modular Inverse both by FLT and Ext_GCD are equal.\n"
                     :   "Verification Failed.\n");
 }
@@ -87,4 +87,5 @@ int main(){
     test_bezout();
     test_modularInverse();
     test_flt();
+    return 0;
 }

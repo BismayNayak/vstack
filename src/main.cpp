@@ -11,7 +11,7 @@ struct Program {
 int main() {
     // List of learning binaries generated in the build directory
     std::vector<Program> programs = {
-        {"numtheory", "./numtheory"}
+        {"numtheory", "./build/numtheory"}
         };
 
     std::cout << "RUNNING ALL LEARNING MODULES\n";
